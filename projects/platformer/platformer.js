@@ -68,6 +68,11 @@ $(function () {
     createCannon("left", 600, 2000);
     createCannon("right", 600, 2000);
     createCannon("left", 200, 1000);
+    
+    
+    
+    
+    
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
