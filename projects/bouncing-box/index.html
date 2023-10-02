@@ -71,9 +71,27 @@
 			turn it around! 
 			*/
 			function update() {
-				
+				moveBoxTo(positionX)
+			nameOfFunction(arguments)
+			
+			var positionX = 0;
+			
+			positionX = 0 + 10;
+			
+			moveBoxTo(positionX);
+					
+			positionX = 10 + 10;         
+					
+			moveBoxTo(positionX);
 
-			};
+			positionX = 20 + 10;        
+
+			moveBoxTo(positionX);
+
+			positionX = 30 + 10;        
+			
+			moveBoxTo(positionX);
+		};
 
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
@@ -81,9 +99,28 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
+				var positionX = 0;
+				changeBoxText(1);
+
 				
+				positionX = 0 + 10;       
+			moveBoxTo(positionX);
 
 
+				positionX = 10 + 10;        
+				moveBoxTo(positionX);
+
+
+				positionX = 0;              
+
+
+			positionX = 0 + 10;       
+			moveBoxTo(positionX);
+
+
+		positionX = 10 + 10;         
+			moveBoxTo(positionX);
+				
 			};
 		})();
 	</script>
