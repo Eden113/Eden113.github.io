@@ -62,7 +62,9 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			var positionX = points;
+			var points = 0; 
+			var speed= 10;
 
 			
 			/* 
@@ -71,28 +73,10 @@
 			turn it around! 
 			*/
 			function update() {
-				moveBoxTo(positionX)
-			nameOfFunction(arguments)
+				moveBoxTo(positionX);
 			
-			var speed = 10 
 
-			var positionX = speed;
-			
-			positionX = 0 + 10;
-			
-			moveBoxTo(positionX);
-					
-			positionX = 10 + 10;         
-					
-			moveBoxTo(positionX);
-
-			positionX = 20 + 10;        
-
-			moveBoxTo(positionX);
-
-			positionX = 30 + 10;        
-			
-			moveBoxTo(positionX);
+			positionX = positionX + speed;
 		};
 
 			/* 
@@ -101,28 +85,10 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				var positionX = speed;
+				positionX = 0;
+				points = points + 1;
 				changeBoxText(points);
-
-				
-				positionX = 0 + 10;       
-			moveBoxTo(positionX);
-
-
-				positionX = 10 + 10;        
-				moveBoxTo(positionX);
-
-
-				positionX = 0;              
-
-
-			positionX = 0 + 10;       
-			moveBoxTo(positionX);
-
-
-		positionX = 10 + 10;         
-			moveBoxTo(positionX);
-				
+				speed = speed + 3;       
 			};
 		})();
 	</script>
